@@ -14,11 +14,55 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 })
 
+const siteTitle =
+  "Núcleo de Saúde Bio Movimento | Fisioterapia e Pilates em São Bernardo do Campo"
+const siteDescription =
+  "Clínica de fisioterapia especializada e Pilates em São Bernardo do Campo. Atendimento particular nas especialidades ortopédica, neurológica e gerontologia."
+
+function metadataBaseUrl(): URL {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL
+  if (explicit) return new URL(explicit)
+  if (process.env.VERCEL_URL) return new URL(`https://${process.env.VERCEL_URL}`)
+  return new URL("http://localhost:3000")
+}
+
 export const metadata: Metadata = {
-  title:
-    "Núcleo de Saúde Bio Movimento | Fisioterapia e Pilates em São Bernardo do Campo",
-  description:
-    "Clínica de fisioterapia especializada e Pilates em São Bernardo do Campo. Atendimento particular nas especialidades ortopédica, neurológica e gerontologia.",
+  metadataBase: metadataBaseUrl(),
+  title: siteTitle,
+  description: siteDescription,
+  keywords: [
+    "fisioterapia",
+    "pilates",
+    "São Bernardo do Campo",
+    "Bio Movimento",
+    "fisioterapia ortopédica",
+    "fisioterapia neurológica",
+    "gerontologia",
+  ],
+  robots: { index: true, follow: true },
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "/",
+    title: siteTitle,
+    description: siteDescription,
+    siteName: "Núcleo de Saúde Bio Movimento",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1024,
+        height: 735,
+        alt: "Núcleo de Saúde Bio Movimento",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/logo.png"],
+  },
 }
 
 export default function RootLayout({

@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# pasta legada (projeto antigo em subpasta); não versionar
+/bio-movimento/
+
 # production
 /build
 
@@ -38,4 +41,3 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
