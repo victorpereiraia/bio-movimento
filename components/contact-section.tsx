@@ -40,7 +40,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold text-[#1A1A2E]">Endereço</p>
                   <p className="mt-1 text-[#1A1A2E]/80">
-                    Av. Capitão Casa, 600 — Bairro Casa Branca, São Bernardo do
+                    Av. Capitão Casa, 600 — Bairro dos Casas, São Bernardo do
                     Campo – SP
                   </p>
                 </div>
