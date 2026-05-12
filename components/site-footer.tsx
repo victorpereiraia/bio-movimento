@@ -20,7 +20,7 @@ export function SiteFooter() {
               Contato
             </p>
             <address className="mt-4 flex flex-col gap-2 text-sm not-italic text-white/75 md:items-end">
-              <span>Av. Capitão Casa, 600 — Casa Branca</span>
+              <span>Av. Capitão Casa, 600 — Bairro dos Casas</span>
               <span>São Bernardo do Campo – SP</span>
               <a
                 href={WHATSAPP_URL}

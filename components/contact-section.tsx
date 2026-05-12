@@ -7,7 +7,7 @@ import { INSTAGRAM_URL, WHATSAPP_URL } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 
 const MAP_EMBED_SRC =
-  "https://maps.google.com/maps?q=Av.+Capit%C3%A3o+Casa,+600,+Casa+Branca,+S%C3%A3o+Bernardo+do+Campo+-+SP,+Brasil&hl=pt-BR&z=16&output=embed"
+  "https://maps.google.com/maps?q=Av.+Capit%C3%A3o+Casa,+600,+Bairro+dos+Casas,+S%C3%A3o+Bernardo+do+Campo+-+SP,+Brasil&hl=pt-BR&z=16&output=embed"
 
 export function ContactSection() {
   return (
